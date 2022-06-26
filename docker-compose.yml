@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
   web:
-    image: cyra
+    image: cyperrange3
     container_name: php_web
     depends_on:
       - db
@@ -19,6 +19,6 @@ services:
       DB_PASSWORD: whack
       DB_NAME: whackus
     ports:
-      - "8081:80"
+      - "8081:8080"
     stdin_open: true
     tty: true
