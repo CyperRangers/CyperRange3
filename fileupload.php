@@ -11,7 +11,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
         // Verify file extension
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
-            
+        // Check whether file exists before uploading it
+            if(file_exists("upload/" . $filename)){
+                echo $filename . " is already exists.";
+            } else{
+                move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $filename);
+                echo "Your file was uploaded successfully to /var/www/html/upload/" . $filename;
+            }    
     } else{
         echo "Error: " . $_FILES["photo"]["error"];
     }
