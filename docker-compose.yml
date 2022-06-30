@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
   web:
-    image: cyperrange3
+    image: webserver
     container_name: php_web
     depends_on:
       - db
