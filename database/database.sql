@@ -16,7 +16,7 @@ CREATE TABLE `tbl_member` (
 INSERT INTO `tbl_member` (`id`, `username`, `password`, `create_at`) VALUES
 (1, 'admin', '$2y$10$3ZnwXA1hl0oSTOmnRC7KRu4jh0d8eVsZfIWpT.6nPuuvpb.MU96tW', '2021-08-05 07:48:40'),
 (2, 'user', '$2y$10$3ZnwXA1hl0oSTOmnRC7KRu4jh0d8eVsZfIWpT.6nPuuvpb.MU96tW', '2021-08-05 07:49:01');
-(3, 'otterich', 'otteRichUainT', '2021-08-05 07:49:01');
+(3, 'dontReverseMD5thispls', 'dd18bf3a8e0a2a3e53e2661c7fb53534', '2021-08-05 07:49:01');
 
 --
 -- Indexes for dumped tables
